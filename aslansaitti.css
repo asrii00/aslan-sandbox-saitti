@@ -2,6 +2,10 @@ body {
     background-color: lightgray;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
 
 h1 {
     color: black;
@@ -11,7 +15,7 @@ p {
     color: darkslategray;
 }
 
-.coolStyle {
+.sandBox {
     background-color: lightslategray;
     color: white;
     border: 2px solid black;
@@ -34,23 +38,28 @@ p {
 
 }
 
-.flex-container>div {
+.menu-container>div {
     background-color: #f1f1f1;
-    width: 200px; /*also restricted by container*/
-    line-height: 45px; /* white box height*/
-   
-    margin: 30px;
+    width: 200px;
+    /*also restricted by container*/
+    line-height: 45px;
+    /* white box height*/
+
+    margin: 10px;
     text-align: center;
 
     font-size: 20px;
 }
 
-.flex-container {
+.menu-container {
+    /*background-color: rgb(84, 76, 195);*/
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 50px;
+    height: 45px;
 
     justify-content: center;
     /* horizontal center. aligns items at the center of container. also flex-start,flex-end,space-around,space between*/
@@ -58,4 +67,45 @@ p {
     /*vertical center. also flex-end/start, stretch (default), baseline(of text)*/
     align-content: stretch;
     /* or space-around, stretch, center, flex-start, flex-end*/
+    
+}
+
+.menu-container>a{
+
+    
+}
+
+.gallery-container {
+    background-color: rgb(50, 49, 49);
+    margin: auto;
+    max-width: 1000px;
+
+}
+
+.row {
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    padding:5%;
+}
+
+.column {
+    /*flex-direction: column;*/
+    max-width: 30%;
+    flex: 30%;
+    padding: 0 5px; /* horizontal spacing of columns*/
+    margin: 15px;
+}
+
+.column img {
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.imageBox {
+
+    background-color: #d6d6d6;
+    margin: 4px;
+    text-align: center;
+
 }
