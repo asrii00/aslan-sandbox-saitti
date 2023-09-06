@@ -11,6 +11,29 @@ p {
     color: darkslategray;
 }
 
+.coolStyle {
+    background-color: lightslategray;
+    color: white;
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.white {
+    border: 1px solid white;
+}
+
+
+.mondrian {
+    border: 4px solid black;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    border: 4px solid black;
+
+}
+
 .flex-container>div {
     background-color: #f1f1f1;
     width: 200px; /*also restricted by container*/
