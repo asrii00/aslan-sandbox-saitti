@@ -15,6 +15,8 @@ p {
     color: darkslategray;
 }
 
+
+
 .sandBox {
     background-color: lightslategray;
     color: white;
@@ -68,7 +70,7 @@ p {
     /*vertical center. also flex-end/start, stretch (default), baseline(of text)*/
     align-content: stretch;
     /* or space-around, stretch, center, flex-start, flex-end*/
-    
+
 }
 
 
@@ -83,42 +85,58 @@ p {
     display: flex;
     /*flex-direction: row;*/
     flex-wrap: nowrap;
-    padding:5%;
+    padding: 5%;
+
 }
 
 .column {
     flex-direction: column;
+
     max-width: 33%;
     flex: 33%;
-    padding: 5px; /* horizontal spacing of columns*/
-    margin: 15px;
+    padding: 5px;
+    /* horizontal spacing of columns*/
+    margin: 12px;
 }
 
 @media (max-width: 900px) {
     .column {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
+
     .row {
-        display: flex;
+
         flex-direction: row;
         flex-wrap: wrap;
-        
-    }}
-  
+
+    }
+}
+
 
 .column img {
     max-width: 100%;
     margin-bottom: 5px;
+
 }
 
 .imageBox {
+    transition: 500ms ease-in-out 70ms;
+    
+    align-items: center;
+    justify-content: center;
 
     background-color: #d6d6d6;
-    margin: 0px;
+
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     padding-bottom: 2px;
+    /*align-content: center;/*??*/
+}
+
+.imageBox:hover {
+    margin: auto;
+    transform: scale(1.3);
 
 }
