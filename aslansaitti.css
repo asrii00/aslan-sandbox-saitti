@@ -93,12 +93,18 @@ td {
   .centered>h1 {
         font-size:x-large;
     }
+  .god>h1 {
+        font-size:x-large;
+    }
 
 }
 
 @media (max-width: 900px) {
 
 
+    .god>h4 {
+        font-size: small;
+    }
     .centered>h4 {
         font-size: small;
     }
