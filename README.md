@@ -21,8 +21,13 @@ Website contains:
 ## Javascript basics 
 
 Website contains: 
-1. -
-1. Multiple event listeners (blur, change) and basic DOM manipulations
-1. Use of functions - 
+1. Simple interactions (alert, button click event) (Contact page)
+1. Multiple event listeners (blur, change) and basic DOM manipulations (Contact page)
+1. Use of arrays, objects and functions (Index page)
+1. 
+1. Use of a constructor (Index)
+
+
 
 ## Asynchronous operations 
+1. A timer is used (Index -> lightbulb)

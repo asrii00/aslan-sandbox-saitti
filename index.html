@@ -85,19 +85,31 @@
                     <hr>
                     <br>
 
-                    <!--  <table class="white">
-            <tr>
-                <th>Aaaa</th>
-                <th>Bbbb</th>
-                <th>Cccc</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-            </tr>
+                    <button id="objectButton"> Click here to extract values from an object and put them in the table
+                        below</button><br><br>
+                    <button id="randomButton"> Click here to add a random person (uses a constructor)</button><br><br>
 
-        </table> -->
+                <table class="objectTable">
+                    <tr>
+                        <td>Name:</td>
+                        <td id="nameCell" style="width: 300px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td id="ageCell"></td>
+                    </tr>
+                    <tr>
+                        <td>Height:</td>
+                        <td id="heightCell"></td>
+                    </tr>
+                    <tr>
+                        <td>Favorite mushroom:</td>
+                        <td id="mushroomCell" style="font-style: italic;"></td>
+                    </tr>
+
+                </table>
+                <br>
+                <hr>
 
                 <p> Here's a totally authentic Mondrian that I stole from the New York Museum of Modern Art: </p>
                 <p><small> (Note: It's actually a table.)</small></p>
@@ -115,9 +127,6 @@
                     <tr style="border: 4px solid black;border-collapse: collapse;">
                         <td rowspan="2" style="border: 4px solid black;border-collapse: collapse;"></td>
                         <td colspan="3" style="border: 4px solid black;border-collapse: collapse;"></td>
-
-
-
 
                     </tr>
                     <tr>
@@ -155,15 +164,32 @@
         </div>
     </section>
 
+    <section class="centered" ID="room" style="background-color: rgb(23, 28, 28);">
+        <div  style="padding: 100px;"><img id="bulb" src="off.png"> <br><br>
+            <button id="lightSwitch"> Turn on the light!</button>
+            <p style="color: #ffffff; font-size:x-small;"  id="lightText"></p>
+        </div>
+    </section>
+
+    <section class="centered">
+        
+        <div id="catDiv" style="margin: 10px;">
+            <br>
+            <button id="catButton" tyle="margin: auto;"> Add a picture of a cat!</button>
+            <br>
+
+        </div>
 
 
+    </section>
+
+
+    <script  src="index.js"></script>
 </body>
 <footer>
     <hr>
-    <p> Asla Riihimaa 2023 - Proudly sponsored by: your mom </p>
+    <p> Asla Riihimaa 2023 </p>
 
 </footer>
-
-</html>
 
 </html>

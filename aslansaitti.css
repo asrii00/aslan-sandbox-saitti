@@ -72,12 +72,18 @@ td {
     margin: auto;
 }
 
-/*.white {
+.objectTable {
     color: black;
-    background-color: white;
-    border: 4px solid black;
+    background-color: rgb(188, 201, 210);
+    border: 3px solid black;
     border-collapse: collapse;
-}*/
+    margin: auto;
+    font-size: smaller;
+}
+
+.objectTable>th, td {
+    padding: 10px;
+  }
 
 
 .mondrian {
