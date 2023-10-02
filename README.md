@@ -11,18 +11,18 @@ Website contains:
 ## CSS
 
 Website contains:
-2. Basic styling (colors, fonts)
-2. Use of classes and ID's. 
-2. Responsive design elements (Mobile friendly)
-2. Use of flexbox (in navigation)
-2. A sincere attempt at having a clear and user-friendly layout. "Homepage straight from 2004" happens to be my preferred website aesthetic.
+1. Basic styling (colors, fonts)
+1. Use of classes and ID's. 
+1. Responsive design elements (Mobile friendly)
+1. Use of flexbox (in navigation)
+1. A sincere attempt at having a clear and user-friendly layout. "Homepage straight from 2004" happens to be my preferred website aesthetic.
 
 
 ## Javascript basics 
 
 Website contains: 
-3. -
-3. Multiple event listeners (blur, change) and basic DOM manipulations
-3. Use of functions - 
+1. -
+1. Multiple event listeners (blur, change) and basic DOM manipulations
+1. Use of functions - 
 
 ## Asynchronous operations 
