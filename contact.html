@@ -41,11 +41,13 @@
                 Contact
             </h2>
 
-            <form id=form1 action="/test.php" target="_self" method="post">
+            <form id=form1 action="/test.php" target="_self" onsubmit="return validateForm()" method="post">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value=""><br>
                 <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value=""><br><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value=""><br><br>
 
                 <label for="gender">Gender</label>
 
@@ -53,7 +55,7 @@
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
-                </select>
+                </select> <br><br>
 
                 <p>
                     Reason for enquiry (you can choose multiple):
@@ -63,9 +65,23 @@
                 <input type="checkbox" id="marry" name="marry">
                 <label for="marry"> I want to marry you </label><br>
                 <input type="checkbox" id="knife" name="knife">
-                <label for="marry"> I challenge you to a knife fight </label><br>
+                <label for="marry"> I challenge you to a knife fight </label><br><br>
+
+                <div id="marryForMoney" style="display: none;">
+                    <label for="networth" id="netWorthLabel" style="display: block;  color: blue">Please enter your
+                        current net worth (EUR):</label>
+                        <div id="networthGuide" style="display: none;color: darkred;">a</div>
+                    <input type="text" style="display: block;" id="netWorthBox" name="networth" value=""> <br>
+                    <label for="income" id="incomeLabel" style="display: block;  color: blue">Please enter your annual
+                        net income (EUR):</label>
+                        <div id="incomeGuide" style="display: none;color: darkred;">a</div>
+                        
+                    <input type="text" style="display: block;" id="incomeBox" name="income" value="">
+                    
+                </div>
+
                 <p> Please specify the dates and locations of your preference for the aforementioned endeavors:</p>
-                <textarea rows="3" cols="50" name="details" form="form1"> Enter text...</textarea>
+                <textarea rows="3" cols="50" id="details" name="details" form="form1"> Enter text...</textarea>
 
                 <p> Are you a human?</p>
                 <input type="radio" id="html" name="real" value="yes">
@@ -90,6 +106,7 @@
 
     </footer>
 
+    <script src="contact.js"> </script>
 </body>
 
 </html>
