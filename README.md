@@ -31,3 +31,7 @@ Website contains:
 
 ## Asynchronous operations 
 1. A timer is used (Index -> lightbulb)
+1. A Fetch call is implemented (weather data on About page) //API key removed for now
+1. Data from the asynchronous call is displayed on the webpage (weather data on About page)
+
+
