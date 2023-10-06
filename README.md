@@ -1,3 +1,7 @@
+2023/10/06: GitHub Pages website should be live at: https://asrii00.github.io/aslan-sandbox-saitti/index.html
+I had issues with images not loading on the GitHub pages version (local was ok), but it seems to be fine now. I drastically reduced image quality because I suspected it had something to do with maximum allowed filesize.
+
+
 ## HTML
 
 Website contains: 
