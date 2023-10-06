@@ -92,7 +92,7 @@ async function handleData() {
 
                     if (imageExists == 'true') {
                         const newImgElement = document.createElement("img");
-                        newImgElement.src = `${item.imgpath}`;
+                        newImgElement.src = "./"+`${item.imgpath}`;
                         newElement.appendChild(newImgElement);
                     }
                 }
