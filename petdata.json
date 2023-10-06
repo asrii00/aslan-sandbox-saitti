@@ -7,7 +7,7 @@
         "birthyear": 2013,
         "color": "Calico",
         "imageavailable": true,
-        "imgpath": "minttu1.PNG",
+        "imgpath": "minttu1.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -31,7 +31,7 @@
         "birthyear": 2008,
         "color": "Sable with white",
         "imageavailable": true,
-        "imgpath": "hippu.PNG",
+        "imgpath": "hippu.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -43,7 +43,7 @@
         "birthyear": 2006,
         "color": "Sable with white",
         "imageavailable": true,
-        "imgpath": "esse.PNG",
+        "imgpath": "esse.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -55,7 +55,7 @@
         "birthyear": 2010,
         "color": "Normal",
         "imageavailable": true,
-        "imgpath": "mutka.JPG",
+        "imgpath": "mutka.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -67,7 +67,7 @@
         "birthyear": 2011,
         "color": "Super Hypo Carrot Tail",
         "imageavailable": true,
-        "imgpath": "kille.JPG",
+        "imgpath": "kille.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -91,7 +91,7 @@
         "birthyear": 2011,
         "color": "Normal",
         "imageavailable": true,
-        "imgpath": "sintti.JPG",
+        "imgpath": "sintti.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -103,7 +103,7 @@
         "birthyear": 2011,
         "color": "Normal",
         "imageavailable": true,
-        "imgpath": "sentti.JPG",
+        "imgpath": "sentti.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     },
@@ -115,7 +115,7 @@
         "birthyear": 2011,
         "color": "Normal",
         "imageavailable": true,
-        "imgpath": "santtu.JPG",
+        "imgpath": "santtu.jpg",
         "unnecessarydata": "asdfghj",
         "moreunnecessarydata": "zxcvbnm"
     }
