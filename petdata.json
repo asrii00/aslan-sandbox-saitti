@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "name": "Minttu",
+        "species": "Cat",
+        "status": "Current",
+        "birthyear": 2013,
+        "color": "Calico",
+        "imageavailable": true,
+        "imgpath": "minttu1.png",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 1,
+        "name": "Jiji",
+        "species": "Cat",
+        "status": "Current",
+        "birthyear": 2022,
+        "color": "Black with a single white whisker",
+        "imageavailable": true,
+        "imgpath": "jiji.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 2,
+        "name": "Hippu",
+        "species": "Dog",
+        "status": "Former",
+        "birthyear": 2008,
+        "color": "Sable with white",
+        "imageavailable": true,
+        "imgpath": "hippu.png",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 3,
+        "name": "Esse",
+        "species": "Dog",
+        "status": "Former",
+        "birthyear": 2006,
+        "color": "Sable with white",
+        "imageavailable": true,
+        "imgpath": "esse.png",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 4,
+        "name": "Mutka",
+        "species": "Leopard gecko",
+        "status": "Former",
+        "birthyear": 2010,
+        "color": "Normal",
+        "imageavailable": true,
+        "imgpath": "mutka.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 5,
+        "name": "Kille",
+        "species": "Leopard gecko",
+        "status": "Former",
+        "birthyear": 2011,
+        "color": "Super Hypo Carrot Tail",
+        "imageavailable": true,
+        "imgpath": "kille.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 6,
+        "name": "Titiuu",
+        "species": "Leopard gecko",
+        "status": "Former",
+        "birthyear": 2012,
+        "color": "Normal",
+        "imageavailable": false,
+        "imgpath": null,
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 7,
+        "name": "Sintti",
+        "species": "Ruffe",
+        "status": "Former",
+        "birthyear": 2011,
+        "color": "Normal",
+        "imageavailable": true,
+        "imgpath": "sintti.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 7,
+        "name": "Sentti",
+        "species": "Ruffe",
+        "status": "Former",
+        "birthyear": 2011,
+        "color": "Normal",
+        "imageavailable": true,
+        "imgpath": "sentti.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    },
+    {
+        "id": 7,
+        "name": "Santtu",
+        "species": "Ruffe",
+        "status": "Former",
+        "birthyear": 2011,
+        "color": "Normal",
+        "imageavailable": true,
+        "imgpath": "santtu.jpg",
+        "unnecessarydata": "asdfghj",
+        "moreunnecessarydata": "zxcvbnm"
+    }
+]

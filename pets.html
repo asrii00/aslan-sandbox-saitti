@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="aslansaitti.css">
+</head>
+
+<body>
+
+    <div class="centered">
+        <h2> Pet Gallery</h2>
+        <hr>
+
+
+     <form>
+            <p>Filter by status:</p>
+            <input type="checkbox" id="currentOnly" name="filter" value="currentOnly">
+            <label for="currentOnly">Only current pets</label><br>
+
+            <p>Filter by species:</p>
+            <input type="checkbox" id="cat" name="speciesfilter" value="cat" checked=true>
+            <label for="cat">Cat</label><br>
+            <input type="checkbox" id="dog" name="speciesfilter" value="dog" checked=true>
+            <label for="dog">Dog</label><br>
+            <input type="checkbox" id="gecko" name="speciesfilter" value="gecko" checked=true>
+            <label for="gecko">Gecko</label><br>
+            <input type="checkbox" id="fish" name="speciesfilter" value="fish" checked=true>
+            <label for="fish">Fish</label><br>
+        </form>
+
+    </div>
+
+    <div id="petGallery" class="centered">
+        
+        <div class="petFlexbox" id="petBox">
+
+
+        </div>
+
+
+    </div>
+
+    <script src="pets.js"></script>
+</body>
+
+</html>

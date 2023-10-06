@@ -8,6 +8,8 @@ const incomeBox = document.getElementById('incomeBox');
 function validateForm() {
     let x = document.forms["form1"]["fname"].value;
     let y = document.forms["form1"]["lname"].value;
+    let humannessInput = document.querySelector(
+        'input[name="real"]:checked');
 
     if (x == "" || y == "") {
         alert("Please include your full name.");
@@ -25,12 +27,18 @@ function validateForm() {
                 alert("Please include your preferred date and location.")
                 return false;
             }
+            else {
+                if (!humannessInput) {
+                    alert("Please confirm whether you are a human or something else.")
+                    return false;
+                }
+            }
         }
-    }
 
+    }
 }
 
-marryCheckBox.addEventListener('change', (event) => { //if you go back, this doesn't get triggered
+marryCheckBox.addEventListener('change', (event) => { 
     if (event.currentTarget.checked) {
         document.getElementById("marryForMoney").style.display = "inline"
 
@@ -40,13 +48,16 @@ marryCheckBox.addEventListener('change', (event) => { //if you go back, this doe
     }
 })
 
+netWorthBox.addEventListener('change', netWorthChecker);
+incomeBox.addEventListener('change', incomeChecker);
 netWorthBox.addEventListener('blur', netWorthChecker);
-incomeBox.addEventListener('blur', incomeChecker); //bugs out sometimes? at least with autofill
+incomeBox.addEventListener('blur', incomeChecker);
+incomeBox.addEventListener('focus', netWorthChecker);
 
 
-function netWorthChecker(){
+function netWorthChecker() {
 
-    
+
     let x = document.getElementById("netWorthBox").value;
     let text;
     if (x == "") {
@@ -67,7 +78,7 @@ function netWorthChecker(){
 }
 
 
-function incomeChecker(){
+function incomeChecker() {
 
     let x = document.getElementById("incomeBox").value;
     let text;
@@ -79,7 +90,7 @@ function incomeChecker(){
     else if (isNaN(x)) {
         let x = document.getElementById("incomeGuide").style.display = "block";
         text = "Please enter numbers only.";
-    } 
+    }
     else if (x < 120000) {
         text = "You don't make enough money. Please reconsider the intention to marry me.";
     }

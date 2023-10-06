@@ -12,7 +12,7 @@
             position: relative;
         }
 
-        .god .blush {
+        .god .owo {
             display: none;
             position: absolute;
             top: 0;
@@ -20,7 +20,7 @@
             z-index: 99;
         }
 
-        .god:hover .blush {
+        .god:hover .owo {
             display: inline;
         }
     </style>
@@ -31,7 +31,7 @@
         <div class="centered">
             <div class="god">
                 <img src="icon2.PNG" alt="the face of god" style="float:left; margin-left: 10px; margin-right: 10px;">
-                <img class="blush" src="iconblush.png" alt="the blushing face of god"
+                <img class="owo" src="iconowo.png" alt="OWO"
                     style="float:left; margin-left: 10px; margin-right: 10px;">
                 <h1>Asla's amazing webpage</h1>
                 <h4> <i> Graphic design is my passion! </i></h4>
@@ -62,7 +62,7 @@
             <div class="grid-container">
 
                 <div class="textColumn">
-                    
+
                     <h2>About: </h2>
 
                     <p> Olen ihminen. Minua voisi luonnehtia henkilöksi. Tarkemmin määriteltynä olen lajin <i>Homo
@@ -78,45 +78,74 @@
 
 
                     <p>
-                        Ps. there's an easter egg hidden on this page, but only beautiful people can find it.
+                        Ps. there's an easter egg hidden on this page. owo
                     </p>
 
                 </div>
 
                 <div class="weatherColumn">
-                
+
                     <div id="weather" class="weatherBox">
                         <h2 id="location"> Not loaded yet</h2>
                         <img id="weatherIcon" src="unknown.png">
                         <div id="description" style="color: grey;"> Not loaded yet
                         </div>
                         <p id="temp"> Not loaded yet</p>
-        
+
                     </div>
                 </div>
 
             </div>
 
+ 
 
-           
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
 
+    
+        <div class="centered">
+            <h2> Pet Gallery</h2>
+            <hr>
+
+
+            <form>
+                <p>Filter by status:</p>
+                <input type="checkbox" id="currentOnly" name="filter" value="currentOnly">
+                <label for="currentOnly">Only current pets</label><br>
+
+                <p>Filter by species:</p>
+                <input type="checkbox" id="cat" name="speciesfilter" value="cat" checked=true>
+                <label for="cat">Cat</label><br>
+                <input type="checkbox" id="dog" name="speciesfilter" value="dog" checked=true>
+                <label for="dog">Dog</label><br>
+                <input type="checkbox" id="gecko" name="speciesfilter" value="gecko" checked=true>
+                <label for="gecko">Gecko</label><br>
+                <input type="checkbox" id="fish" name="speciesfilter" value="fish" checked=true>
+                <label for="fish">Fish</label><br>
+            </form>
+
+        </div>
+
+        <div id="petGallery" class="centered">
+
+            <div class="petFlexbox" id="petBox">
+
+
+            </div>
+
+
+        </div>
+
+        <br><br>
     </section>
-    <aside>
-
-
-
-    </aside>
     <footer>
         <hr>
         <p> Asla Riihimaa 2023 </p>
 
     </footer>
 
-    <script src="weather.js" lang="text/javascript">
-    
-    </script>
+    <script src="about.js" lang="text/javascript"> </script>
+
 </body>
 
 </html>

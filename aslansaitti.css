@@ -201,22 +201,28 @@ td {
 @keyframes example {
     0% {
         left: 0px;
+        transform: scalex(-1);
     }
 
     25% {
         left: 200px;
+       
+        
     }
 
     50% {
         left: 0px;
+        transform: scalex(1);
     }
 
     75% {
         left: -200px;
+        
     }
 
     100% {
         left: 0px;
+        transform: scalex(-1);
     }
 }
 
@@ -309,4 +315,42 @@ td {
 
     background-color: #fff;
     border: 2px solid black;
+}
+
+
+.petFlexbox{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    justify-content: flex-start;
+    /* horizontal center. aligns items at the center of container. also flex-start,flex-end,space-around,space between*/
+    align-items: center;
+    /*vertical center. also flex-end/start, stretch (default), baseline(of text)*/
+    align-content: stretch;
+    /* or space-around, stretch, center, flex-start, flex-end*/
+
+
+}
+
+.petcard{
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    width: 240px;
+    min-height: 480px;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+.petcard>img{
+
+    max-width: 200px;
+    
 }
