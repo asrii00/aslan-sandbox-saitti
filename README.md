@@ -26,7 +26,7 @@ Website contains:
 1. Basic styling (colors, fonts)
 1. Use of classes and ID's 
 1. Responsive design elements (Mobile friendly)
-1. Use of flexbox (in navigation)
+1. Use of flexbox (in navigation, pet gallery)
 1. A sincere attempt at having a clear and user-friendly layout. "Personal website straight from 2004" happens to be my preferred website aesthetic.
 
 
