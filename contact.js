@@ -48,55 +48,58 @@ marryCheckBox.addEventListener('change', (event) => {
     }
 })
 
+
+netWorthBox.addEventListener('focusout', netWorthChecker);
+incomeBox.addEventListener('focusout', incomeChecker);
 netWorthBox.addEventListener('change', netWorthChecker);
 incomeBox.addEventListener('change', incomeChecker);
-netWorthBox.addEventListener('blur', netWorthChecker);
-incomeBox.addEventListener('blur', incomeChecker);
-incomeBox.addEventListener('focus', netWorthChecker);
 
 
 function netWorthChecker() {
+    let networth = document.getElementById("netWorthBox").value;
+    let text = "";
 
-
-    let x = document.getElementById("netWorthBox").value;
-    let text;
-    if (x == "") {
-        let x = document.getElementById("incomeGuide").style.display = "block";
+    if (networth == "" || networth == null ) {
         text = "Please enter a value";
-    }
-    else if (isNaN(x)) {
-        let x = document.getElementById("networthGuide").style.display = "block";
+    } else if (isNaN(networth)) {
         text = "Please enter numbers only.";
-    } else if (x < 800000) {
+    } else if (networth < 900000) {
         text = "You are too poor. Please reconsider the intention to marry me.";
     }
-    else {
-        text = "";
-    }
-    document.getElementById("networthGuide").innerHTML = text;
 
+    let networthGuide = document.getElementById("networthGuide");
+    if (text === "") {
+        networthGuide.style.display = "none"; 
+    } else {
+        networthGuide.style.display = "block";
+    }
+
+    networthGuide.innerHTML = text;
 }
 
 
+
+
 function incomeChecker() {
+   
+    let income = document.getElementById("incomeBox").value;
+    let text = "";
 
-    let x = document.getElementById("incomeBox").value;
-    let text;
-    if (x == "") {
-        let x = document.getElementById("incomeGuide").style.display = "block";
+    if (income == "" || income == null) {
         text = "Please enter a value";
-
-    }
-    else if (isNaN(x)) {
-        let x = document.getElementById("incomeGuide").style.display = "block";
+    } else if (isNaN(income)) {
         text = "Please enter numbers only.";
+    } else if (income < 900000) {
+        text = "You are too poor. Please reconsider the intention to marry me.";
     }
-    else if (x < 120000) {
-        text = "You don't make enough money. Please reconsider the intention to marry me.";
+
+    let incomeGuide = document.getElementById("incomeGuide");
+    if (text === "") {
+        incomeGuide.style.display = "none"; 
+    } else {
+        incomeGuide.style.display = "block"; 
     }
-    else {
-        text = "";
-    }
-    document.getElementById("incomeGuide").innerHTML = text;
+
+    incomeGuide.innerHTML = text;
 }
 

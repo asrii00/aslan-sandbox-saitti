@@ -7,7 +7,6 @@ Known issues/todo:
 - Header looks a bit different when using Firefox vs. on Chrome
 - Weather widget could have time sensitive icons (moon instead of sun at night)
 - Dark/light theme switcher code exists but hasn't been added
-- Files could be sorted into subfolders 
 
 
 
@@ -35,7 +34,7 @@ Website contains:
 
 Website contains: 
 1. Simple interactions (alert, button click event) (Contact page)
-1. Multiple event listeners (blur, change, focus) and basic DOM manipulations (Contact page)
+1. Multiple event listeners (change, focus, focusout) and basic DOM manipulations (Contact page)
 1. Use of arrays, objects and functions (Index page)
 1. Advanced logic, forEach loop and dynamic DOM updates (About page / about.js)
 1. Use of a constructor (Index)
