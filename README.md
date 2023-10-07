@@ -7,6 +7,7 @@ Known issues/todo:
 - Header looks a bit different when using Firefox vs. on Chrome
 - Weather widget could have time sensitive icons (moon instead of sun at night)
 - Dark/light theme switcher code exists but hasn't been added
+- Files could be sorted into subfolders 
 
 
 
