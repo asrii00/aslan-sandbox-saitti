@@ -7,6 +7,7 @@ Known issues/todo:
 - Header looks a bit different when using Firefox vs. on Chrome
 - Weather widget could have time sensitive icons (moon instead of sun at night)
 - Dark/light theme switcher code exists but hasn't been added
+- Files could be sorted into subfolders 
 
 
 
@@ -16,7 +17,7 @@ Website contains:
 1. Basic HTML structure
 1. HTML elements like: headings, paragraphs, lists
 1. A HTML Form, links, and images (jpeg and GIF)
-1. A table (The Mondrian "painting" is a table)
+1. Tables (The Mondrian "painting" is a table)
 1. Semantic elements (header, nav, section, footer)
 
 
@@ -26,7 +27,7 @@ Website contains:
 1. Basic styling (colors, fonts)
 1. Use of classes and ID's 
 1. Responsive design elements (Mobile friendly)
-1. Use of flexbox (in navigation)
+1. Use of flexbox (in navigation, pet gallery)
 1. A sincere attempt at having a clear and user-friendly layout. "Personal website straight from 2004" happens to be my preferred website aesthetic.
 
 
