@@ -76,14 +76,14 @@ function turnOnLight() {
     let random = Math.floor(Math.random() * 8); //0-5
     let secondsOn=(random+1) * 600;
 
-    bulb.src = "on.png";
+    bulb.src = "./media/on.png";
     document.getElementById("room").style = "background-color: white;"
     setTimeout(turnOff, secondsOn);
 
 }
 
 function turnOff(){
-    bulb.src = "off.png";
+    bulb.src = "./media/off.png";
     document.getElementById("room").style = "background-color: rgb(23, 28, 28);";
     document.getElementById("lightText").innerHTML = "Sorry, the electrician I hired was really incompetent."
 
@@ -92,7 +92,7 @@ function turnOff(){
 
 function catAdder(){
     const image = document.createElement("img");
-    image.src="catto.png";
+    image.src="./media/catto.png";
     image.style="margin: 10px;";
     document.getElementById("catDiv").appendChild(image);
 

@@ -3,17 +3,17 @@ function getWeather(cityID) {
 
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)
         .then(function (res) {
-            if (res.ok){
+            if (res.ok) {
                 console.log("response ok");
                 return res.json();
-            }else{
+            } else {
                 console.log("failed");
                 alert("Weather API call failed. (API key removed from public repo)");
             }
-            })
-            
+        })
+
         .then(function (data) {
-            drawWeather(data); 
+            drawWeather(data);
         })
         .catch(function () {
         });
@@ -30,13 +30,13 @@ function drawWeather(d) {
     document.getElementById('temp').innerHTML = celcius + '&deg;';
     document.getElementById('location').innerHTML = d.name;
 
-    if (weatherText.includes("cloud")){
-        document.getElementById('weatherIcon').src="cloud.png";
+    if (weatherText.includes("cloud")) {
+        document.getElementById('weatherIcon').src = "./media/cloud.png";
     }
-    else  if (weatherText.includes("clear")){
-        document.getElementById('weatherIcon').src="sun.png";
-    }else if (weatherText.includes("rain")){
-        document.getElementById('weatherIcon').src="rain.png";
+    else if (weatherText.includes("clear")) {
+        document.getElementById('weatherIcon').src = "./media/sun.png";
+    } else if (weatherText.includes("rain")) {
+        document.getElementById('weatherIcon').src = "./media/rain.png";
     }
 
 }
@@ -92,7 +92,7 @@ async function handleData() {
 
                     if (imageExists == 'true') {
                         const newImgElement = document.createElement("img");
-                        newImgElement.src = "./"+`${item.imgpath}`;
+                        newImgElement.src = "./media/" + `${item.imgpath}`;
                         newElement.appendChild(newImgElement);
                     }
                 }
@@ -104,7 +104,7 @@ async function handleData() {
 
                     if (imageExists == 'true') {
                         const newImgElement = document.createElement("img");
-                        newImgElement.src = `${item.imgpath}`;
+                        newImgElement.src = "./media/" + `${item.imgpath}`;
                         newElement.appendChild(newImgElement);
                     }
                 }
@@ -116,7 +116,7 @@ async function handleData() {
 
                     if (imageExists == 'true') {
                         const newImgElement = document.createElement("img");
-                        newImgElement.src = `${item.imgpath}`;
+                        newImgElement.src = "./media/" + `${item.imgpath}`;
                         newElement.appendChild(newImgElement);
                     }
                 }
@@ -127,7 +127,7 @@ async function handleData() {
 
                     if (imageExists == 'true') {
                         const newImgElement = document.createElement("img");
-                        newImgElement.src = `${item.imgpath}`;
+                        newImgElement.src = "./media/" + `${item.imgpath}`;
                         newElement.appendChild(newImgElement);
 
                     }
