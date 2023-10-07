@@ -16,7 +16,7 @@ Website contains:
 1. Basic HTML structure
 1. HTML elements like: headings, paragraphs, lists
 1. A HTML Form, links, and images (jpeg and GIF)
-1. A table (The Mondrian "painting" is a table)
+1. Tables (The Mondrian "painting" is a table)
 1. Semantic elements (header, nav, section, footer)
 
 
