@@ -7,6 +7,7 @@ const personAsla = {
 
 const button = document.getElementById("objectButton");
 const randomButton = document.getElementById("randomButton");
+const europeanButton = document.getElementById("europeanButton");
 const nameC = document.getElementById("nameCell");
 const ageC = document.getElementById("ageCell");
 const heightC = document.getElementById("heightCell");
@@ -17,6 +18,7 @@ const catButton = document.getElementById("catButton");
 
 button.addEventListener('click', objectFunction);
 randomButton.addEventListener('click', addRandomPerson);
+europeanButton.addEventListener('click', addEuropeanPerson);
 lightSwitch.addEventListener('click', turnOnLight);
 catButton.addEventListener('click', catAdder);
 
@@ -80,6 +82,32 @@ class Person {
     }
 }
 
+class EuropeanPerson extends Person {
+
+    constructor(name, age, heightFtIn, shroom, heightCm ) {
+        super(name, age, heightFtIn, shroom);
+        this.heightInCm = heightCm;
+        this.#privateMethod();
+    }
+
+    getHeightInCm(){
+        return this.heightInCm;
+    }
+
+    putInfoInTable(){
+        nameC.innerHTML = this.name;
+        ageC.innerHTML = this.age;
+        heightC.innerHTML = this.heightInCm + " cm";
+        shroomC.innerHTML = this.favoriteMushroom;
+    }
+
+    #privateMethod(){
+        console.log("Secret text");
+    }
+        
+    
+}
+
 
 
 function addRandomPerson() {
@@ -104,6 +132,14 @@ function addRandomPerson() {
     console.log(person0);
     person0.putInfoInTable();
     person0.addMushroomImg();
+
+}
+
+function addEuropeanPerson(){
+    let european;
+    european = new EuropeanPerson("Maria", 33, "5ft 4in", "Boletus edulis", 163);
+    european.putInfoInTable();
+    european.addMushroomImg();
 
 }
 
