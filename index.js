@@ -1,4 +1,4 @@
-const person = {
+const personAsla = {
     name: 'Asla',
     age: 25,
     height: '6ft',
@@ -22,16 +22,7 @@ catButton.addEventListener('click', catAdder);
 
 
 function objectFunction() {
-    let personValueArray = Object.values(person);
-
-    nameC.innerHTML = personValueArray[0];
-    ageC.innerHTML = personValueArray[1];
-    heightC.innerHTML = personValueArray[2];
-    shroomC.innerHTML = personValueArray[3];
-
-}
-function objectFunction2(somePerson) {
-    let personValueArray = Object.values(somePerson);
+    let personValueArray = Object.values(personAsla);
 
     nameC.innerHTML = personValueArray[0];
     ageC.innerHTML = personValueArray[1];
@@ -40,12 +31,56 @@ function objectFunction2(somePerson) {
 
 }
 
-function Person(name, age, height, shroom) {
-    this.name = name;
-    this.age = age;
-    this.height = height;
-    this.favoriteMushroom = shroom;
+class Person {
+
+    constructor(name, age, height, shroom) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.favoriteMushroom = shroom;
+    }
+
+    getFaveMushroom() {
+        return this.favoriteMushroom;
+
+    }
+
+    getMushroomImage() {
+        if (this.favoriteMushroom == "Amanita muscaria") {
+            return "./media/amanita.png";
+        }
+        else if (this.favoriteMushroom == "Boletus edulis") {
+            return "./media/boletus.PNG";
+        }
+        else if (this.favoriteMushroom == "Russula paludosa") {
+            return "./media/russula.PNG";
+        }
+        else {
+            return "none";
+        }
+    }
+
+    putInfoInTable() {
+
+        nameC.innerHTML = this.name;
+        ageC.innerHTML = this.age;
+        heightC.innerHTML = this.height;
+        shroomC.innerHTML = this.favoriteMushroom;
+
+    }
+
+    addMushroomImg() {
+        const img= this.getMushroomImage();
+        if (img != "none") {
+            const image = document.createElement("img");
+            image.src = img;
+            image.style = "margin: 8px; width: 32px; display: inline; vertical-align: middle  ";
+            shroomC.appendChild(image);
+        }
+    }
 }
+
+
 
 function addRandomPerson() {
     let random = Math.floor(Math.random() * 6); //0-5
@@ -67,14 +102,15 @@ function addRandomPerson() {
         person0 = new Person("Matt", 41, "5ft 10in", "Russula paludosa");
     }
     console.log(person0);
-    objectFunction2(person0);
+    person0.putInfoInTable();
+    person0.addMushroomImg();
 
 }
 
 
 function turnOnLight() {
     let random = Math.floor(Math.random() * 8); //0-5
-    let secondsOn=(random+1) * 600;
+    let secondsOn = (random + 1) * 600;
 
     bulb.src = "./media/on.png";
     document.getElementById("room").style = "background-color: white;"
@@ -82,7 +118,7 @@ function turnOnLight() {
 
 }
 
-function turnOff(){
+function turnOff() {
     bulb.src = "./media/off.png";
     document.getElementById("room").style = "background-color: rgb(23, 28, 28);";
     document.getElementById("lightText").innerHTML = "Sorry, the electrician I hired was really incompetent."
@@ -90,10 +126,10 @@ function turnOff(){
 }
 
 
-function catAdder(){
+function catAdder() {
     const image = document.createElement("img");
-    image.src="./media/catto.png";
-    image.style="margin: 10px;";
+    image.src = "./media/catto.png";
+    image.style = "margin: 10px;";
     document.getElementById("catDiv").appendChild(image);
 
 }
