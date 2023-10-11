@@ -10,6 +10,8 @@ const lightSwitch = document.getElementById("lightSwitch");
 const bulb = document.getElementById("bulb");
 const catButton = document.getElementById("catButton");
 
+
+
 button.addEventListener('click', objectFunction);
 randomButton.addEventListener('click', addRandomPerson);
 europeanButton.addEventListener('click', addEuropeanPerson);
@@ -186,7 +188,17 @@ function turnOff() {
 
 function catAdder() {
     const image = document.createElement("img");
-    image.src = "./media/catto.png";
+    let num = document.getElementById("catDiv").childElementCount;
+    console.log(num);
+
+    if (num == 15){
+        image.src = "./media/evilcatto.png";
+
+
+    }else {
+        image.src = "./media/catto.png";
+    }
+    
     image.style = "margin: 10px;";
     document.getElementById("catDiv").appendChild(image);
 
