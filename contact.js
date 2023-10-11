@@ -63,7 +63,7 @@ function netWorthChecker() {
         text = "Please enter a value";
     } else if (isNaN(networth)) {
         text = "Please enter numbers only.";
-    } else if (networth < 900000) {
+    } else if (networth < 999999) {
         text = "You are too poor. Please reconsider the intention to marry me.";
     }
 
@@ -89,8 +89,8 @@ function incomeChecker() {
         text = "Please enter a value";
     } else if (isNaN(income)) {
         text = "Please enter numbers only.";
-    } else if (income < 900000) {
-        text = "You are too poor. Please reconsider the intention to marry me.";
+    } else if (income < 120000) {
+        text = "You don't make enough money. Please reconsider the intention to marry me.";
     }
 
     let incomeGuide = document.getElementById("incomeGuide");

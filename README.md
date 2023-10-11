@@ -1,5 +1,5 @@
 2023/10/06: GitHub Pages website should be live at: https://asrii00.github.io/aslan-sandbox-saitti/index.html   
-I had issues with images not loading on the GitHub pages version (local was ok), but it seems to be fine now. I drastically reduced image quality because I suspected it had something to do with maximum allowed filesize.  
+
 Known issues/todo:   
 - Inconsistent image formatting on Pet Gallery (could be unified, might also be able to get away with larger filesizes)
 - (Missing weather API key, intentionally removed from public repo for now.)
@@ -33,10 +33,10 @@ Website contains:
 
 Website contains: 
 1. Simple interactions (alert, button click event) (Contact page)
-1. Multiple event listeners (change, focusout, etc) and basic DOM manipulations (Contact page)
+1. Multiple event listeners (change, focusout, etc) and basic DOM manipulations (On all pages except Gallery)
 1. Use of arrays, objects and functions (Index page)
-1. Advanced logic, forEach loop and dynamic DOM updates (About page / about.js)
-1. Object-Oriented JavaScript principles: classes and objects, inheritance (extends), private method, polymorphism
+1. Advanced logic, forEach loop and dynamic DOM updates (About page)
+1. Object-Oriented JavaScript principles: classes and objects, inheritance (extends), private method, polymorphism (Index page: the update banner and personal info table)
 
 
 ## Asynchronous operations 
