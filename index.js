@@ -1,9 +1,3 @@
-const personAsla = {
-    name: 'Asla',
-    age: 25,
-    height: '6ft',
-    favoriteMushroom: 'Cortinarius semisanguineus',
-};
 
 const button = document.getElementById("objectButton");
 const randomButton = document.getElementById("randomButton");
@@ -22,6 +16,16 @@ europeanButton.addEventListener('click', addEuropeanPerson);
 lightSwitch.addEventListener('click', turnOnLight);
 catButton.addEventListener('click', catAdder);
 
+window.onload = function () {
+    let news = new News("Update (2023/10/11): ", "The site is now live. See README.md for issues/to-do list.", "newsSection");
+}
+
+const personAsla = {
+    name: 'Asla',
+    age: 25,
+    height: '6ft',
+    favoriteMushroom: 'Cortinarius semisanguineus',
+};
 
 function objectFunction() {
     let personValueArray = Object.values(personAsla);
@@ -32,6 +36,24 @@ function objectFunction() {
     shroomC.innerHTML = personValueArray[3];
 
 }
+
+
+class News {
+    constructor(title, content, elementId) {
+        this.title = title;
+        this.content = content; 
+
+        let html = `<p>${this.title}</p>
+        <p>${this.content}</p>`;
+        
+        let container = document.getElementById(elementId);
+        container.innerHTML = html;
+    }
+
+}
+
+
+
 
 class Person {
 
