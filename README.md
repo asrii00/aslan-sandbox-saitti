@@ -1,7 +1,6 @@
 2023/10/06: GitHub Pages website should be live at: https://asrii00.github.io/aslan-sandbox-saitti/index.html   
 I had issues with images not loading on the GitHub pages version (local was ok), but it seems to be fine now. I drastically reduced image quality because I suspected it had something to do with maximum allowed filesize.  
 Known issues/todo:   
-- Small form validation issue on Contact page (eventListener not getting triggered as expected)
 - Inconsistent image formatting on Pet Gallery (could be unified, might also be able to get away with larger filesizes)
 - (Missing weather API key, intentionally removed from public repo for now.)
 - Header looks a bit different when using Firefox vs. on Chrome
