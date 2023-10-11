@@ -49,13 +49,13 @@ class Person {
 
     getMushroomImage() {
         if (this.favoriteMushroom == "Amanita muscaria") {
-            return "./media/amanita.jpg";
+            return "media/amanita.jpg";
         }
         else if (this.favoriteMushroom == "Boletus edulis") {
-            return "./media/boletus.jpg";
+            return "media/boletus.jpg";
         }
         else if (this.favoriteMushroom == "Russula paludosa") {
-            return "./media/russula.jpg";
+            return "media/russula.jpg";
         }
         else {
             return "none";
