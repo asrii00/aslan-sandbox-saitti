@@ -330,11 +330,11 @@ td {
 @media (max-width: 400px) {
 
     .about-container {
-        grid-template-columns: 40% 30%;
+        grid-template-columns: 45% 45%;
     }
     .weatherBox{
-        max-width: 120px;
-        margin-left: 5px;
+        max-width: 130px;
+        margin-left: 20px;
         margin-top: 45px;
         margin-right: 5px;
         margin-bottom: 30px;
