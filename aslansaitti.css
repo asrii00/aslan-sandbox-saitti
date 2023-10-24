@@ -319,6 +319,14 @@ td {
     }
 
 }
+@media (max-width: 600px) {
+
+    .about-container {
+        grid-template-columns: min-content min-content;
+        padding: 3%;
+    }
+
+}
 
 
 
