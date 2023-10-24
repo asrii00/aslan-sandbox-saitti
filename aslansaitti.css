@@ -322,16 +322,21 @@ td {
 @media (max-width: 700px) {
 
     .about-container {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 45%;
         padding: 2%;
     }
     .weatherBox{
         width: auto;
-        
+        margin-left: 20px;
+        margin-top: 45px;
+        margin-right: 7px;
+        margin-bottom: 22px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 5px;
     }
-
 }
-
 
 
 .weatherBox{
