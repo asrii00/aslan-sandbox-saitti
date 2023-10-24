@@ -118,7 +118,7 @@ td {
     }
 
     .mondrian {
-        width: 400px;
+        width: 80%;
         height: 300px;
     }
 
@@ -294,11 +294,33 @@ td {
 
 }
 
-.grid-container {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+.about-container {
+    margin: auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 0px;
 }
+
+@media (max-width: 900px) {
+
+    .about-container {
+        grid-template-columns: 60% min-content;
+        padding: 3%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .about-container {
+        grid-template-columns: 50% min-content;
+        padding: 3%;
+    }
+
+}
+
+
 
 .weatherBox{
     width: 200px;
@@ -325,15 +347,10 @@ td {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 
     justify-content: flex-start;
-    /* horizontal center. aligns items at the center of container. also flex-start,flex-end,space-around,space between*/
     align-items: center;
-    /*vertical center. also flex-end/start, stretch (default), baseline(of text)*/
     align-content: stretch;
-    /* or space-around, stretch, center, flex-start, flex-end*/
-
 
 }
 
