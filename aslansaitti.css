@@ -310,7 +310,7 @@ td {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
     .about-container {
         grid-template-columns: 50% 40%;
@@ -325,6 +325,27 @@ td {
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 5px;
+    }
+}
+@media (max-width: 400px) {
+
+    .about-container {
+        grid-template-columns: 40% 30%;
+    }
+    .weatherBox{
+        max-width: 120px;
+        margin-left: 5px;
+        margin-top: 45px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .weatherBox>img{
+        max-width: 100px;
     }
 }
 
