@@ -319,11 +319,15 @@ td {
     }
 
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     .about-container {
         grid-template-columns: min-content min-content;
-        padding: 3%;
+        padding: 2%;
+    }
+    .weatherBox{
+        width: 150px;
+        
     }
 
 }
