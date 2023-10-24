@@ -305,7 +305,7 @@ td {
 @media (max-width: 900px) {
 
     .about-container {
-        grid-template-columns: 60% min-content;
+        grid-template-columns: 60% 40%;
         padding: 3%;
     }
 }
