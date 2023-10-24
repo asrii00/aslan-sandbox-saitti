@@ -333,7 +333,7 @@ td {
         grid-template-columns: 45% 45%;
     }
     .weatherBox{
-        max-width: 130px;
+        max-width: 140px;
         margin-left: 20px;
         margin-top: 45px;
         margin-right: 5px;
